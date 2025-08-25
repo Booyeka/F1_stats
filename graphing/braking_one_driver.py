@@ -26,7 +26,7 @@ def get_brake_segments(driver_abr, race_id):
             CarTelemetry.brake == True
         ).all()
         laps = session.query(Lap).filter(
-            Lap.race_id == 1,
+            Lap.race_id == 2,
             Lap.session == "race",
             Lap.driver_abr == driver_abr,
         )
@@ -55,7 +55,7 @@ def get_brake_segments(driver_abr, race_id):
         lap_end = lap_start + lap_df.iloc[lap]["lap_time"]
         lap_data = session.query(CarTelemetry).filter(
             CarTelemetry.driver_abr == 'VER',
-            CarTelemetry.race_id == 1,
+            CarTelemetry.race_id == 2,
             CarTelemetry.session == 'race',
             CarTelemetry.sessionTime >= lap_start,
             CarTelemetry.sessionTime <= lap_end
@@ -176,7 +176,7 @@ compound_colors = {
 }
 
 # Create figure and axis
-fig, ax = plt.subplots(figsize=(16, 12))
+fig, ax = plt.subplots(figsize=(9, 6))
 
 # # --- Background color bands by lap ---
 for i, compound in enumerate(driver1_tire_compounds):
@@ -215,7 +215,7 @@ ax.legend(handles=handles + [ax.lines[0]])
 
 ax.set_xlim(min_dist1 - 10, max_dist1 + 10)
 # ax.set_xlim(min_dist1 - 10, max_dist1 /4)
-ax.set_ylim(min_lap1 - 1, max_lap1 + 1)
+ax.set_ylim(min_lap1 - 1, max_lap1 // 1.5)
 # ax.set_ylim(min_dist - 10, max_dist + 10)
 # ax.set_xlim(min_lap - 1, max_lap + 1)
 

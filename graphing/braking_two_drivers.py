@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 from db.models import Race, Lap, Driver, CarTelemetry, CarPosition, Weather, TrackCorners
 from matplotlib.patches import Patch
+from matplotlib.ticker import MaxNLocator
 
 
 
@@ -192,7 +193,7 @@ compound_colors = {
 }
 
 # Create figure and axis
-fig, ax = plt.subplots(figsize=(16, 12))
+fig, ax = plt.subplots(figsize=(12, 8))
 
 # # --- Background color bands by lap ---
 # for i, compound in enumerate(driver1_tire_compounds):
@@ -219,7 +220,7 @@ for lap_number, start_dist, end_dist in brake_segments_driver1:
             # 0.8,
             0.8,                            # height (how thick the row bar is)
             # end_dist - start_dist,
-            color='red'
+            color='blue'
         )
     )
     
@@ -234,7 +235,7 @@ for lap_number, start_dist, end_dist in brake_segments_driver2:
             # 0.8,
             0.8,                            # height (how thick the row bar is)
             # end_dist - start_dist,
-            color='blue'
+            color='black'
         )
     )
 # Plot turn markers as vertical lines
@@ -247,6 +248,11 @@ for turn_x in corner_dist:
 handles = [Patch(color=color, label=compound) for compound, color in compound_colors.items()]
 ax.legend(handles=handles + [ax.lines[0]])
 
+# laps = range(1, len(brake_segments_driver1+1)) 
+
+# plt.yticks(np.arange(0, (len(brake_segments_driver1)+1)/2, 2))  # ticks every 2 laps
+ax.yaxis.set_major_locator(MaxNLocator(nbins=57))  # at most 10 ticks
+# ax.set_yticks(sorted(set(lap for lap, _, _ in brake_segments_driver1)))
 # Set axis limits based on data
 
 ax.set_xlim(min_dist - 10, max_dist + 10)
