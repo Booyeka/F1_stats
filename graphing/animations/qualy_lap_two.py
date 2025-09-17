@@ -489,7 +489,7 @@ if __name__ == "__main__":
 
 
     ax.set_aspect('equal')
-    ax.set_title(f'-- 1st VERUS 2nd QUALIFYING -- ')
+    ax.set_title(f'{race_dicts[0]["location"]} QUALIFYING -- Pole vs 2nd')
 
     # ax.set_aspect('equal')
     # ax.set_title(f'{lap_df2.iloc[0]["driver_abr"]} -- 2nd QUALIFYING POSITION -- ')

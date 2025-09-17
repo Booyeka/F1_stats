@@ -1,0 +1,82 @@
+[
+    {
+        "race": "1",
+        "name": "Melbourne_Australia.mp4",
+        "file": "f1_animations/1_Melbourne_Australia.mp4"
+    },
+    {
+        "race": "2",
+        "name": "Shanghai_China.mp4",
+        "file": "f1_animations/2_Shanghai_China.mp4"
+    },
+    {
+        "race": "3",
+        "name": "Suzuka_Japan.mp4",
+        "file": "f1_animations/3_Suzuka_Japan.mp4"
+    },
+    {
+        "race": "4",
+        "name": "Sakhir_Bahrain.mp4",
+        "file": "f1_animations/4_Sakhir_Bahrain.mp4"
+    },
+    {
+        "race": "5",
+        "name": "Jeddah_Saudi Arabia.mp4",
+        "file": "f1_animations/5_Jeddah_Saudi Arabia.mp4"
+    },
+    {
+        "race": "6",
+        "name": "Miami_United States.mp4",
+        "file": "f1_animations/6_Miami_United States.mp4"
+    },
+    {
+        "race": "7",
+        "name": "Imola_Italy.mp4",
+        "file": "f1_animations/7_Imola_Italy.mp4"
+    },
+    {
+        "race": "8",
+        "name": "Monaco_Monaco.mp4",
+        "file": "f1_animations/8_Monaco_Monaco.mp4"
+    },
+    {
+        "race": "9",
+        "name": "Barcelona_Spain.mp4",
+        "file": "f1_animations/9_Barcelona_Spain.mp4"
+    },
+    {
+        "race": "10",
+        "name": "Montr\u00e9al_Canada.mp4",
+        "file": "f1_animations/10_Montr\u00e9al_Canada.mp4"
+    },
+    {
+        "race": "11",
+        "name": "Spielberg_Austria.mp4",
+        "file": "f1_animations/11_Spielberg_Austria.mp4"
+    },
+    {
+        "race": "12",
+        "name": "Silverstone_United Kingdom.mp4",
+        "file": "f1_animations/12_Silverstone_United Kingdom.mp4"
+    },
+    {
+        "race": "13",
+        "name": "Spa-Francorchamps_Belgium.mp4",
+        "file": "f1_animations/13_Spa-Francorchamps_Belgium.mp4"
+    },
+    {
+        "race": "14",
+        "name": "Budapest_Hungary.mp4",
+        "file": "f1_animations/14_Budapest_Hungary.mp4"
+    },
+    {
+        "race": "15",
+        "name": "Zandvoort_Netherlands.mp4",
+        "file": "f1_animations/15_Zandvoort_Netherlands.mp4"
+    },
+    {
+        "race": "16",
+        "name": "Monza_Italy.mp4",
+        "file": "f1_animations/16_Monza_Italy.mp4"
+    }
+]

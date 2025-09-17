@@ -192,7 +192,10 @@ def pull_weekly_updates():
             # car_pos_data = []
             for driver in unique_drivers_list:
                 # car data -- by driver
-                car_telem = event.laps.pick_drivers(f"{driver}").get_car_data().add_distance().add_driver_ahead().add_relative_distance().add_differential_distance()
+                try:
+                    car_telem = event.laps.pick_drivers(f"{driver}").get_car_data().add_distance().add_driver_ahead().add_relative_distance().add_differential_distance()
+                except ValueError:
+                    continue
                 car_telem = car_telem.replace({np.nan: None}) # converting NAN to NONE values
                 for row in range(len(car_telem["Date"])):
                     data_row = car_telem.iloc[row]
